@@ -1,0 +1,14 @@
+<router-outlet></router-outlet>
+<p>Senders</p>
+<div>
+
+    <h1>{{sender}}</h1>
+    <!-- <input [(ngModel)]="sender"  type="text" value="Search"  /> 
+    <button (click)="onClick(myInput.value)">
+        Search
+    </button> -->
+
+    <ul *ngFor="let sender of senders">
+        <li>{{sender.senderName}}</li>
+    </ul>
+</div>
